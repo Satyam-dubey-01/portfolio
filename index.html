@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Satyam Dubey — Portfolio</title>
+  <meta name="description" content="Portfolio of Satyam Dubey — Front-End Developer & Web Designer" />
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="light">
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">Satyam <span>Dubey</span></div>
+      <div class="actions">
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <a class="btn ghost" href="Satyam dubey resume.pdf" target="_blank">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main-grid">
+    <section class="hero card glass">
+      <div class="hero-inner">
+        <div class="photo-wrap">
+          <img src="profile.jpeg" alt="Satyam Dubey" class="photo" />
+        </div>
+        <div class="hero-text">
+          <h1 class="fade-up">Hi, I'm <span>Satyam</span></h1>
+          <p class="muted slide-up">Front-End Developer & Web Designer — building responsive, accessible web experiences using HTML, CSS, JavaScript and PHP. Currently pursuing B.E. in Computer Engineering.</p>
+          <div class="hero-cta slide-up delay-1">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn outline" href="#contact">Contact</a>
+          </div>
+          <ul class="info-list slide-up delay-2">
+            <li><strong>Location:</strong> Vapi, Gujarat</li>
+            <li><strong>Email:</strong> <a href="mailto:dubeysatyam5454@gmail.com">dubeysatyam5454@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+918780049156">+91 8780049156</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card glass section">
+      <h2>About Me</h2>
+      <p>I'm a creative and detail-oriented front-end developer with hands-on experience building user-friendly, mobile-first websites. I focus on clean code, accessible interfaces and delightful interactions. I enjoy learning new technologies and improving UX through small, meaningful animations.</p>
+    </section>
+
+    <section id="skills" class="card glass section">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>React</span><span>UI/UX</span><span>Photoshop</span><span>Canva</span>
+      </div>
+    </section>
+
+    <section id="projects" class="card glass section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <div class="proj-media">📁</div>
+          <div class="proj-body">
+            <h3>Cyberbullying Detection</h3>
+            <p>Web app using JS + PHP to flag harmful messages and help moderate content. Includes a simple admin UI and detection rules.</p>
+            <p class="tag">HTML • CSS • JS • PHP</p>
+            <div class="proj-links">
+              <a class="link" href="#" onclick="alert('Demo not deployed');return false">Live</a>
+              <a class="link" href="#" onclick="alert('Repo not provided');return false">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="proj-media">🌐</div>
+          <div class="proj-body">
+            <h3>Portfolio (this site)</h3>
+            <p>Modern responsive portfolio with dark/light theme, animations, and contact form that opens mail client. Built with vanilla HTML/CSS/JS.</p>
+            <p class="tag">HTML • CSS • JS</p>
+            <div class="proj-links">
+              <a class="link" href="#projects">Live</a>
+              <a class="link" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="proj-media">🔧</div>
+          <div class="proj-body">
+            <h3>College Project — IoT Workshop</h3>
+            <p>Worked on IoT device integration and data visualization during Technex'24 workshop at IIT Varanasi.</p>
+            <p class="tag">IoT • Data Viz</p>
+            <div class="proj-links">
+              <a class="link" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="card glass section">
+      <h2>Education & Certifications</h2>
+      <ul class="edu">
+        <li><strong>B.E. — Computer Engineering</strong> — Government Engineering College, Daman (2022–2026 expected) — CGPA: 7.50/10</li>
+        <li><strong>Generative AI Micro-Internship 15 Days </strong> — IBM SkillsBuild & CSRBOX (JULY 2025) </li>
+        <li><strong>IoT Workshop</strong> — Technex'24, IIT Varanasi</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card glass section contact-section">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or have questions — drop a message.</p>
+      <form id="contactForm" class="contact-form">
+        <div class="row">
+          <input id="name" placeholder="Your name" required>
+          <input id="email" placeholder="Your email" required>
+        </div>
+        <textarea id="message" placeholder="Your message" rows="5" required></textarea>
+        <div class="row actions-row">
+          <button class="btn" type="submit">Send</button>
+          <a class="btn outline" href="mailto:dubeysatyam5454@gmail.com">Email Me</a>
+        </div>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>© <span id="year"></span> Satyam Dubey — Built with ❤️</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/satyam-dubey-290a3a352/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Satyam-dubey-01" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
